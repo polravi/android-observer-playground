@@ -2,20 +2,20 @@
 
 Main functions in this code
 ---
-###postOrder 
+### postOrder 
 
 **making the backend api call**
 
     - response will call OnSuccess DeliveryFlowObserver - trigger advanceOrder
 
-###advanceOrder -
+### advanceOrder -
 
 *transitioning from one state to another*
 
     - check the state
         - call the Callback function on DeliveryFlow  like onSubmittablePendingPayment, OnSubmittable ....
 
-###DeliveryVM 
+### DeliveryVM 
 >
     - onSubmittablePendingPayment - call patch payment api  
         - update the state of OrderFlowDomain.OrderFlowState
@@ -26,7 +26,7 @@ Main functions in this code
              -- update the state of OrderFlowDomain.OrderFlowState
                 -- trigger the DeliveryFlowObserver.OnSuccess
 
-###DeliveryFlowObserver
+### DeliveryFlowObserver
 >
     - OnSuccess
         -- advanceOrder
