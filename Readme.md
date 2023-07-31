@@ -1,17 +1,21 @@
-#Main functions in this code
+**This Code have example of showing how Observer should be listening to the changing states and trigger the underlying functions**
+
+Main functions in this code
 ---
-#postOrder 
-*making the backend api call*
+###postOrder 
+
+**making the backend api call**
 
     - response will call OnSuccess DeliveryFlowObserver - trigger advanceOrder
 
-#advanceOrder -
+###advanceOrder -
+
 *transitioning from one state to another*
 
     - check the state
         - call the Callback function on DeliveryFlow  like onSubmittablePendingPayment, OnSubmittable ....
 
-#DeliveryVM 
+###DeliveryVM 
 >
     - onSubmittablePendingPayment - call patch payment api  
         - update the state of OrderFlowDomain.OrderFlowState
@@ -22,7 +26,7 @@
              -- update the state of OrderFlowDomain.OrderFlowState
                 -- trigger the DeliveryFlowObserver.OnSuccess
 
-#DeliveryFlowObserver
+###DeliveryFlowObserver
 >
     - OnSuccess
         -- advanceOrder
