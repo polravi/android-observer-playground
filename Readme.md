@@ -12,6 +12,7 @@
         - call the Callback function on DeliveryFlow  like onSubmittablePendingPayment, OnSubmittable ....
 
 #DeliveryVM 
+>
     - onSubmittablePendingPayment - call patch payment api  
         - update the state of OrderFlowDomain.OrderFlowState
             - trigger the DeliveryFlowObserver.OnSuccess
@@ -22,6 +23,7 @@
                 -- trigger the DeliveryFlowObserver.OnSuccess
 
 #DeliveryFlowObserver
+>
     - OnSuccess
         -- advanceOrder
             --jump to advanceOrder function above for state transition
