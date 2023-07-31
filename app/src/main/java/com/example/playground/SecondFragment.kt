@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 
@@ -43,6 +44,7 @@ class SecondFragment : Fragment() {
 
         deliveryViewModel.orderFlowDomain?.orderFlowState()?.observe(this.viewLifecycleOwner, Observer {
             Log.d("Orders2.0","order state in fragment : ${it?.orderState()?.value}")
+            Toast.makeText(requireActivity(), "Current State : ${(it?.orderState()?.value)}", 2).show()
         })
 
         binding.buttonSecond.setOnClickListener {
