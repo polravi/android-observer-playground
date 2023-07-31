@@ -1,7 +1,6 @@
 package com.example.playground
 
 import android.os.Bundle
-import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -10,12 +9,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.Observer
 import com.example.playground.databinding.ActivityMainBinding
-import com.example.playground.domain.DeliveryVM
-import com.example.playground.viewmodels.ItemViewModel
+import com.example.playground.viewmodels.DeliveryVM
 
 
 class MainActivity : AppCompatActivity() {

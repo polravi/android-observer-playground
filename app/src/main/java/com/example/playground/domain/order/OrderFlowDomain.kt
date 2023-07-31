@@ -1,9 +1,10 @@
-package com.example.playground.domain
+package com.example.playground.domain.order
 
 import androidx.lifecycle.MutableLiveData
 import com.example.playground.common.Flow
 import com.example.playground.common.OrderState
-import com.mcdonalds.domain.flows.OrderFlow
+import com.example.playground.domain.order.OrderFlowState
+import com.example.playground.flows.OrderFlow
 
 @Suppress("TooManyFunctions")
 sealed interface OrderFlowDomain {

@@ -1,14 +1,13 @@
-package com.example.playground.domain
+package com.example.playground.viewmodels
 
-import android.content.Context
 import android.util.Log
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.playground.common.OrderState
+import com.example.playground.domain.InitialDomainSetter
+import com.example.playground.domain.order.OrderFlowDomain
+import com.example.playground.domain.order.OrderFlowState
 import com.example.playground.observers.DeliveryFlowObserver
-import com.example.playground.observers.OrderFlowObserver
 import kotlinx.coroutines.*
 
 class DeliveryVM (private val defaultDispatcher: CoroutineDispatcher = Dispatchers.Default) : ViewModel() {

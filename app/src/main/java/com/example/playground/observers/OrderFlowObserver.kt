@@ -3,8 +3,8 @@ package com.example.playground.observers
 import android.util.Log
 import androidx.lifecycle.Observer
 import com.example.playground.common.OrderState
-import com.example.playground.domain.OrderFlowDomain
-import com.example.playground.domain.OrderFlowState
+import com.example.playground.domain.order.OrderFlowDomain
+import com.example.playground.domain.order.OrderFlowState
 
 abstract class OrderFlowObserver(val orderFlowDomain: OrderFlowDomain): Observer<OrderFlowState?> {
 

@@ -1,6 +1,7 @@
-package com.example.playground.domain
+package com.example.playground.domain.order
 
 import com.example.playground.common.OrderState
+import com.example.playground.models.Order
 
 data class OrderFlowState
     (

@@ -1,8 +1,8 @@
-package com.example.playground.domain
+package com.example.playground.flows
 
 import android.util.Log
 import com.example.playground.common.OrderState
-import com.mcdonalds.domain.flows.OrderFlow
+import com.example.playground.domain.order.OrderFlowDomain
 
 class DeliveryFlow(private val orderFlowDomain: OrderFlowDomain
 ) : OrderFlow() {

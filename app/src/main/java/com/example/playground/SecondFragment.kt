@@ -9,10 +9,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 
-import androidx.navigation.fragment.findNavController
 import com.example.playground.databinding.FragmentSecondBinding
-import com.example.playground.domain.DeliveryVM
-import com.example.playground.domain.InitialDomainSetter
+import com.example.playground.viewmodels.DeliveryVM
 import com.example.playground.viewmodels.ItemViewModel
 
 /**

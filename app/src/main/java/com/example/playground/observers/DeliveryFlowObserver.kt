@@ -1,9 +1,8 @@
 package com.example.playground.observers
 
 import android.util.Log
-import com.example.playground.domain.OrderFlowDomain
-import com.example.playground.domain.OrderFlowState
-import com.example.playground.observers.OrderFlowObserver
+import com.example.playground.domain.order.OrderFlowDomain
+import com.example.playground.domain.order.OrderFlowState
 
 class DeliveryFlowObserver(orderFlowDomain: OrderFlowDomain) : OrderFlowObserver(orderFlowDomain) {
     @Suppress("EmptyFunctionBlock") // TODO

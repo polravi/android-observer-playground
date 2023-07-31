@@ -1,9 +1,9 @@
-package com.mcdonalds.domain.flows
+package com.example.playground.flows
 
 import android.util.Log
 import com.example.playground.common.OrderState
-import com.example.playground.domain.ORDER_FLOW_LOGGING_TAG
-import com.example.playground.domain.OrderFlowState
+import com.example.playground.domain.order.ORDER_FLOW_LOGGING_TAG
+import com.example.playground.domain.order.OrderFlowState
 
 import com.example.playground.common.OrderState.*
 

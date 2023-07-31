@@ -1,10 +1,13 @@
-package com.example.playground.domain
+package com.example.playground.domain.order
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.playground.common.Flow
 import com.example.playground.common.OrderState
-import com.mcdonalds.domain.flows.OrderFlow
+import com.example.playground.domain.order.OrderFlowState
+import com.example.playground.flows.DeliveryFlow
+import com.example.playground.flows.OrderFlow
+import com.example.playground.models.Order
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random
