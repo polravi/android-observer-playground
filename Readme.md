@@ -2,7 +2,7 @@
 
 Main functions in this code
 ---
-### postOrder 
+### ViewModel.postOrder 
 
 **making the backend api call**
 
@@ -15,7 +15,7 @@ Main functions in this code
     - check the state
         - call the Callback function on DeliveryFlow  like onSubmittablePendingPayment, OnSubmittable ....
 
-### DeliveryVM 
+### DeliveryFlow
 >
     - onSubmittablePendingPayment - call patch payment api  
         - update the state of OrderFlowDomain.OrderFlowState
